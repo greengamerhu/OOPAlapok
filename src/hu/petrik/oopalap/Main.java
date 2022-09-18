@@ -32,5 +32,10 @@ public class Main {
         }
         System.out.printf("Az origotol legtavolabb az %d áll " +
                 "A pomt az %s tavolsaga az origitol: %.3f\n", legtavolabbiIndex+1, pontok[legtavolabbiIndex],pontok[legtavolabbiIndex].getTavolasgOrigo() );
+
+
+        System.out.printf("Az %s a %d. siknegyedben található \n",p2 , p2.getSiknegyed());
+        System.out.printf("Az %s a %d. siknegyedben található \n",p1 , p1.getSiknegyed());
+        System.out.printf("Az %s a %d.  siknegyedben található \n",p3 , p3.getSiknegyed());
     }
 }

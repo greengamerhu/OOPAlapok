@@ -41,8 +41,17 @@ public class Pont {
     public  double tavolsag(Pont masikPont) {
         return Math.sqrt(Math.pow(this.x - masikPont.x, 2) + Math.pow(this.y - masikPont.y, 2));
     }
-
-
+    public  int getSiknegyed() {
+                if   (this.x < 0 && this.y > 0) {
+                    return 1;
+                } else if (this.x < 0 && this.y < 0) {
+                    return 2;
+                } else if (this.x > 0 && this.y < 0) {
+                    return 3;
+                } else if (this.x > 0 && this.y > 0) {
+                    return 4;
+                } else return 0;
+    }
 
     private static int kordinátaGeneralasa(int n) {
         return (int) (Math.random() * (2 * n + 1)) - n;
